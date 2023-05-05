@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="kontener">
+      <div id="logo" align="center">
+        <img src="baner.png" />
+      </div>
+      <div id="start" align="center">
+        <input
+          type="button"
+          onclick="location.href='#pierwsze'; reset(); obniz ()"
+          value="Start quizu"
+          class="button"
+        />
+        <input
+          type="button"
+          onclick="location.href='index.html'; reset();"
+          value="Reset strony"
+          class="button"
+        />
+      </div>
+
+      <div class="quiz">
+        <div id="pierwsze" align="center">
+          <form>
+            <h1>Pytanie pierwsze:</h1>
+            <br />
+            W którym roku wydano pierwszego Windowsa? <br /><br />
+            <input type="radio" name="a1" id="p1_1" /> A. 1984
+            <input type="radio" name="a1" id="p1_2" /> B. 1985
+            <input type="radio" name="a1" id="p1_3" /> C. 1986
+          </form>
+          <br />
+          <a href="#drugie" class="button1">Następne</a>
+        </div>
+        <div id="drugie" align="center">
+          <form>
+            <h1>Pytanie drugie:</h1>
+            <br />
+            Kto opracował skrutkurę HTML jako pierwszy? <br /><br />
+            <input type="radio" name="a1" id="p2_1" /> A. Tim Berners-Lee
+            <input type="radio" name="a1" id="p2_2" /> B. Jimmy Wales
+            <input type="radio" name="a1" id="p2_3" /> C. Bill Gates
+          </form>
+          <br />
+          <a href="#pierwsze" class="button1">Poprzednie</a>
+          <a href="#trzecie" class="button1">Następne</a>
+        </div>
+        <div id="trzecie" align="center">
+          <form>
+            <h1>Pytanie trzecie:</h1>
+            <br />
+            Jak nazywał się jeden z trzech założycieli Apple? <br /><br />
+            <input type="radio" name="a1" id="p3_1" /> A. Ted Nelson
+            <input type="radio" name="a1" id="p3_2" /> B. Steve Wozniak
+            <input type="radio" name="a1" id="p3_3" /> C. Steve Jobs
+          </form>
+          <br />
+          <input
+            type="button"
+            onclick="location.href='#end'; pobierz(); obniz1()"
+            value="Koniec!"
+            class="button"
+          />
+        </div>
+        <div id="end" align="center">
+          <input
+            type="button"
+            onclick="location.href='#pierwsze'; reset(); obniz ()"
+            value="Spróbuj ponownie!"
+            class="button"
+          />
+        </div>
+      </div>
+      <div id="stopka" align="center">
+      </div>
+    </div>
+  </body>
+</html>
